@@ -30,8 +30,10 @@
 </template>
 <script>
 export default({
+  props:['isActive'],
+  setup() {
 
-    
+  }
 })
 </script>
 
@@ -43,7 +45,7 @@ export default({
   position: absolute;
   z-index: 100;
   display: none;
-  transition: width .5s linear;
+  transition: transform .5s linear;
 }
 .sideActive{
   transform: translateX(0%)!important;

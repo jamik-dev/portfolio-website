@@ -1,21 +1,17 @@
 <template>
   <!-- ====== Navgition ======  -->
   <nav class="navbar navbar-default">
-    <div class="container">
-      <!-- Brand and toggle get grouped for better mobile display -->
-
-      <!-- Collect the nav links, and other content for toggling -->
+    <div class="container">>
       <div class="navbar-wrapper" id="nav-icon-collapse">
-        <!-- links -->
         <div class="navbar-header">
           <a class="logo" href="#">Jamshid</a>
         </div>
         <ul class="nav">
           <li>
-            <a href="#">Home<span></span></a>
+            <router-link to="/home">Home<span></span></router-link>
           </li>
           <li>
-            <a href="#">About<span></span></a>
+            <router-link to="/about">About<span></span></router-link>
           </li>
           <li>
             <a href="#">Services<span></span></a>
@@ -34,10 +30,11 @@
           </li>
         </ul>
 
-          <div @click="openSideBar" class="burger-wrapper">
+          <div @click="openSideBar(isActive)" v-on:click="getActive(isActive)" class="burger-wrapper">
             <span :class="{'burActive': isActive}" class="burger-button"></span>
           </div>   
-      </div>
+          
+      </div>  
     </div>
   </nav>
   <!-- ====== End Navgition ======  -->
@@ -46,6 +43,9 @@
 import {ref} from 'vue'
 export default {
   name: "Navbar",
+  props: {
+    getActive: Function
+  },
   setup() {
     const isActive = ref(false)
     const openSideBar = () => {
@@ -170,7 +170,7 @@ export default {
   transform: rotate(-45deg) translate(35px, 35px);
   
 }
-  @media (min-width: 786px) and (max-width: 1800px)  {
+  @media (min-width: 786px) {
     .burger-wrapper{
       display: none;
     }

@@ -23,19 +23,19 @@
             <!-- social icons -->
             <div class="social-icon">
               <a href="#0">
-                <span><i class="fab fa-facebook"></i></span>
+                <span><i class="fab fa-facebook-f"></i></span>
               </a>
               <a href="#0">
-                <span><i class="fab fa-twitter"></i></span>
+                <span><i class="fab fa-telegram-plane"></i></span>
               </a>
               <a href="#0">
-                <span><i class="fab fa-linkedin"></i></span>
+                <span><i class="fab fa-github"></i></span>
               </a>
               <a href="#0">
-                <span><i class="fab fa-behance"></i></span>
+                <span><i class="fab fa-instagram"></i></span>
               </a>
               <a href="#0">
-                <span><i class="fab fa-youtube"></i></span>
+                <span><i class="fab fa-linkedin-in"></i></span>
               </a>
             </div>
           </div>
@@ -155,12 +155,12 @@ h5 {
 .clip {
   font-family: "Ubuntu Thin";
   font-weight: 200;
-  font-size: 60px;
+  font-size: 4.2rem;
   height: 100px;
 }
 .clip .is-visible {
   font-family: "Ubuntu Light";
-  font-size: 70px;
+  font-size: 4.2rem;
   font-weight: 300;
 }
 .social-icon a {
@@ -172,6 +172,22 @@ h5 {
   width: 40px;
   border-radius: 50%;
   position: relative;
+  transition: background-color 0.5s linear;
+}
+.social-icon a:nth-child(1):hover{
+  background-color: #3B5998;
+}
+.social-icon a:nth-child(2):hover{
+  background-color: #229ED9;
+}
+.social-icon a:nth-child(3):hover{
+  background-color: #24292f;
+}
+.social-icon a:nth-child(4):hover{
+  background-color: #DD2A7B;
+}
+.social-icon a:nth-child(5):hover{
+  background-color: #0077b5;
 }
 
 .fab {
@@ -180,6 +196,7 @@ h5 {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+  font-size: 1.4rem;
 }
 span.cursor{
   display: inline-block;
