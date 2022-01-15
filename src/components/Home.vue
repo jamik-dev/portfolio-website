@@ -1,6 +1,6 @@
 <template>
   <!-- ====== Header ======  -->
-  <div id="home" class="header">
+  <section id="home" class="header">
     <img src="../assets/img/bg.jpg" class="img" alt="" />
     <div class="svg">
       <svg x="0px" y="0px" viewBox="0 186.5 1920 113.5">
@@ -45,7 +45,7 @@
       <!-- /row -->
     </div>
     <!-- /container -->
-  </div>
+  </section>
   <!-- ====== End Header ======  -->
 </template>
 
@@ -157,6 +157,7 @@ h5 {
   font-weight: 200;
   font-size: 4.2rem;
   height: 100px;
+  /* margin-bottom: -20px; */
 }
 .clip .is-visible {
   font-family: "Ubuntu Light";

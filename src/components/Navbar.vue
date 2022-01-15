@@ -1,12 +1,11 @@
 <template>
   <!-- ====== Navgition ======  -->
   <nav class="navbar navbar-default">
-    <div class="container">>
-      <div class="navbar-wrapper" id="nav-icon-collapse">
+      <div class="navbar-wrapper">
         <div class="navbar-header">
           <a class="logo" href="#">Jamshid</a>
         </div>
-        <ul class="nav">
+        <ul class="navli">
           <li>
             <router-link to="/home">Home<span></span></router-link>
           </li>
@@ -35,7 +34,6 @@
           </div>   
           
       </div>  
-    </div>
   </nav>
   <!-- ====== End Navgition ======  -->
 </template>
@@ -74,7 +72,7 @@ export default {
   justify-content: flex-start;
   font-family: "Poppins", sans-serif;
 }
-.nav {
+.navli {
   display: flex;
   width: 70%;
   list-style-type: none;
@@ -82,9 +80,10 @@ export default {
   align-items: center;
   position: sticky;
   transition: margin 1s ease-in-out;
+  margin-top: 14px;
 
 }
-.nav a {
+.navli a {
   font-weight: 550;
   font-size: 15px;
   line-height: 20px;
@@ -95,7 +94,7 @@ export default {
   position: relative;
 }
 
-.nav li,
+.navli li,
 .navbar-header a {
   color: #fff;
   text-decoration: none;
@@ -107,6 +106,7 @@ export default {
   width: 20%;
   display: flex;
   justify-content: flex-start;
+  align-items: center;
   transition: all 1s ease-in-out;
 }
 .navbar-header a {
@@ -117,7 +117,7 @@ export default {
   font-weight: 900;
   margin-left: 90px;
 }
-.nav li span {
+.navli li span {
   position: absolute;
   bottom: -5px;
   right: 0px;
@@ -177,7 +177,7 @@ export default {
   }
 
   @media (min-width: 786px) and (max-width: 930px) {
-  .nav{
+  .navli{
 		margin-left: 90px;
     transition: margin 1s ease-in-out;
 	}
@@ -187,7 +187,7 @@ export default {
 	}
   }
   @media (min-width: 0px) and (max-width: 785px) {
-    .nav li{
+    .navli li{
       display: none;
     }
     .navbar-header{
