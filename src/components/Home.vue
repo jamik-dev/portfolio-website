@@ -1,7 +1,7 @@
 <template>
   <!-- ====== Header ======  -->
   <section id="home" class="header">
-    <img src="../assets/img/bg.jpg" class="img" alt="" />
+    <!-- <img src="/img/bg.jpg" class="img" alt="" /> -->
     <div class="svg">
       <svg x="0px" y="0px" viewBox="0 186.5 1920 113.5">
         <polygon
@@ -16,9 +16,10 @@
           <!-- caption -->
           <div class="caption">
             <h5>Hello</h5>
-            <h1 class="cd-headline clip"> I am
+            <h1 class="cd-headline clip">
+              I am
               <span class="is-visible">{{ typeValue }}</span>
-              <span class="cursor" :class="{'typing': typeStatus}">&nbsp;</span> 
+              <span class="cursor" :class="{ typing: typeStatus }">&nbsp;</span>
             </h1>
             <!-- social icons -->
             <div class="social-icon">
@@ -54,52 +55,53 @@ export default {
   name: "Home",
   components: {},
   data() {
-    return{
-      typeValue: '',
+    return {
+      typeValue: "",
       typeStatus: false,
-      typeArray: ['Toshov Jamshid', 'a Web-developer', 'a Freelancer'],
+      typeArray: ["Toshov Jamshid", "a Web-developer", "a Freelancer"],
       typingSpeed: 200,
       erasingSpeed: 100,
       newTextDelay: 2000,
       typeArrayIndex: 0,
-      charIndex: 0
-    }
+      charIndex: 0,
+    };
   },
   methods: {
     typeText() {
-      if(this.charIndex < this.typeArray[this.typeArrayIndex].length) {
-        if(!this.typeStatus)
-          this.typeStatus = true;
-        this.typeValue += this.typeArray[this.typeArrayIndex].charAt(this.charIndex);  
+      if (this.charIndex < this.typeArray[this.typeArrayIndex].length) {
+        if (!this.typeStatus) this.typeStatus = true;
+        this.typeValue += this.typeArray[this.typeArrayIndex].charAt(
+          this.charIndex
+        );
         this.charIndex += 1;
         setTimeout(this.typeText, this.typingSpeed);
-      }
-      else {
+      } else {
         this.typeStatus = false;
         setTimeout(this.eraseText, this.newTextDelay);
       }
     },
     eraseText() {
-      if(this.charIndex > 0) {
-        if(!this.typeStatus)
-          this.typeStatus = true;
-        this.typeValue = this.typeArray[this.typeArrayIndex].substring(0, this.charIndex - 1);
+      if (this.charIndex > 0) {
+        if (!this.typeStatus) this.typeStatus = true;
+        this.typeValue = this.typeArray[this.typeArrayIndex].substring(
+          0,
+          this.charIndex - 1
+        );
         this.charIndex -= 1;
-        setTimeout(this.eraseText, this.erasingSpeed);  
-      }
-      else {
+        setTimeout(this.eraseText, this.erasingSpeed);
+      } else {
         this.typeStatus = false;
         this.typeArrayIndex += 1;
-        if(this.typeArrayIndex >= this.typeArray.length)
-          this.typeArrayIndex =  0;
-        
+        if (this.typeArrayIndex >= this.typeArray.length)
+          this.typeArrayIndex = 0;
+
         setTimeout(this.typeText, this.typingSpeed + 1000);
       }
-    }
+    },
   },
   created() {
-    setTimeout(this.typeText, this.newTextDelay + 200)
-  }
+    setTimeout(this.typeText, this.newTextDelay + 200);
+  },
 };
 </script>
 <style >
@@ -108,15 +110,21 @@ export default {
   background-size: cover;
   position: relative;
   overflow: hidden;
+  background-image: url(/img/bg.jpg);
   background-position: 0px 0px;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
-.img {
-  position: absolute;
-  filter: brightness(0.35);
-  width: 100%;
-  height: 120%;
+.header:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #000;
+    opacity: .60;
+    z-index: 0 ;
 }
 .svg {
   position: absolute;
@@ -136,6 +144,7 @@ export default {
   color: #fff;
   width: 100%;
   text-align: center;
+  z-index: 5;
 }
 .v-middle .caption h5 {
   font-size: 50px;
@@ -175,19 +184,19 @@ h5 {
   position: relative;
   transition: background-color 0.5s linear;
 }
-.social-icon a:nth-child(1):hover{
-  background-color: #3B5998;
+.social-icon a:nth-child(1):hover {
+  background-color: #3b5998;
 }
-.social-icon a:nth-child(2):hover{
-  background-color: #229ED9;
+.social-icon a:nth-child(2):hover {
+  background-color: #229ed9;
 }
-.social-icon a:nth-child(3):hover{
+.social-icon a:nth-child(3):hover {
   background-color: #24292f;
 }
-.social-icon a:nth-child(4):hover{
-  background-color: #DD2A7B;
+.social-icon a:nth-child(4):hover {
+  background-color: #dd2a7b;
 }
-.social-icon a:nth-child(5):hover{
+.social-icon a:nth-child(5):hover {
   background-color: #0077b5;
 }
 
@@ -199,7 +208,7 @@ h5 {
   transform: translate(-50%, -50%);
   font-size: 1.4rem;
 }
-span.cursor{
+span.cursor {
   display: inline-block;
   margin-left: 3px;
   width: 4px;
@@ -207,12 +216,18 @@ span.cursor{
   background: #fff;
   animation: cursorBlink 1s infinite;
 }
-span.cursor.typing{
+span.cursor.typing {
   animation: none;
 }
 @keyframes cursorBlink {
-  49%{ background: #fff;}
-  50%{ background: transparent;}
-  99%{ background: transparent;}
+  49% {
+    background: #fff;
+  }
+  50% {
+    background: transparent;
+  }
+  99% {
+    background: transparent;
+  }
 }
 </style>

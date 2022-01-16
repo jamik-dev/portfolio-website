@@ -7,7 +7,9 @@
       <div class="row">
         <div class="col-lg-4 col-md-6 col-sm-12">
           <div class="item">
-            <span class="icon"><i aria-hidden="true" class="fa fa-laptop"></i></span>
+            <span class="icon"
+              ><i aria-hidden="true" class="fa fa-laptop"></i
+            ></span>
             <h6>Web Design</h6>
             <p>
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum,
@@ -17,7 +19,9 @@
         </div>
         <div class="col-lg-4 col-md-6 col-sm-12">
           <div class="item">
-            <span class="icon"><i aria-hidden="true" class="fa fa-bullhorn"></i></span>
+            <span class="icon"
+              ><i aria-hidden="true" class="fa fa-bullhorn"></i
+            ></span>
             <h6>Branding</h6>
             <p>
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum,
@@ -27,7 +31,9 @@
         </div>
         <div class="col-lg-4 col-md-6 col-sm-12">
           <div class="item">
-            <span class="icon"><i aria-hidden="true" class="fa fa-umbrella"></i></span>
+            <span class="icon"
+              ><i aria-hidden="true" class="fa fa-umbrella"></i
+            ></span>
             <h6>Development</h6>
             <p>
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum,
@@ -37,7 +43,9 @@
         </div>
         <div class="col-lg-4 col-md-6 col-sm-12">
           <div class="item">
-            <span class="icon"><i aria-hidden="true" class="fa fa-crown"></i></span>
+            <span class="icon"
+              ><i aria-hidden="true" class="fa fa-crown"></i
+            ></span>
             <h6>Creative Design</h6>
             <p>
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum,
@@ -47,7 +55,9 @@
         </div>
         <div class="col-lg-4 col-md-6 col-sm-12">
           <div class="item">
-            <span class="icon"><i aria-hidden="true" class="fa fa-tv"></i></span>
+            <span class="icon"
+              ><i aria-hidden="true" class="fa fa-tv"></i
+            ></span>
             <h6>Fully Responsive</h6>
             <p>
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum,
@@ -57,7 +67,9 @@
         </div>
         <div class="col-lg-4 col-md-6 col-sm-12">
           <div class="item">
-            <span class="icon"><i aria-hidden="true" class="fa fa-camera"></i></span>
+            <span class="icon"
+              ><i aria-hidden="true" class="fa fa-camera"></i
+            ></span>
             <h6>Retina Ready</h6>
             <p>
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum,
@@ -69,12 +81,23 @@
     </div>
   </section>
 </template>
+<script>
+
+export default {
+  setup() {
+  },
+};
+</script>
+
 <style>
 .services {
   background: #f7f7f7;
   padding: 100px 0;
   padding-bottom: 70px;
   position: relative;
+}
+.services .container{
+  margin-top: -100px;
 }
 .section-head {
   margin-bottom: 80px;
@@ -128,17 +151,17 @@
   margin-bottom: 15px;
   font-weight: 900;
   font-size: 20px;
-  font-family:Arial;
+  font-family: Arial;
 }
 .services .item p {
-  font-family:Arial;  
+  font-family: Arial;
   word-spacing: 2px;
   font-weight: 400;
   font-size: 14px;
 }
-@media (min-width: 0) and (max-width: 767px){
-    .services{
-        margin-top: 500px;
-    }
+@media (min-width: 0) and (max-width: 767px) {
+  .services {
+    margin-top: 200px;
+  }
 }
 </style>

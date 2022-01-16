@@ -5,7 +5,7 @@
         <div class="col-md-5 col-sm-12">
           <div class="hero-img">
             <div class="scale-anim">
-              <img src="@/assets/img/hero.jpg" />
+              <img src="/img/hero.jpg" />
             </div>
           </div>
         </div>
@@ -53,7 +53,7 @@
 <style>
 .about .container {
   margin-top: 125px;
-  height: 100vh;;
+  height: 100vh;
 }
 .hero-img {
   padding: 0 0 0 30px;
@@ -64,17 +64,17 @@
 img {
   vertical-align: middle;
 }
-.scale-anim{
+.scale-anim {
   position: relative;
   overflow: hidden;
 }
 .hero-img img {
   width: 100%;
   height: auto;
-  transition: transform .6s ease-in-out;
+  transition: transform 0.6s ease-in-out;
 }
-.hero-img img:hover{
-  transform: scale(1.1)
+.hero-img img:hover {
+  transform: scale(1.1);
 }
 .hero-img:after {
   content: "";
@@ -83,7 +83,7 @@ img {
   position: absolute;
   left: 0px;
   bottom: -30px;
-  background-image: url("~@/assets/img/dots.png");
+  background-image: url("/img/dots.png");
   background-repeat: repeat;
   z-index: -1;
 }
