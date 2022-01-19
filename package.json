@@ -12,8 +12,11 @@
     "gsap": "^3.9.1",
     "jquery": "^3.6.0",
     "popper.js": "^1.16.1",
+    "swiper": "^7.4.1",
     "transition": "^0.1.1",
+    "v-owl-carousel": "^1.0.8",
     "vue": "^3.0.0",
+    "vue-owl-carousel": "^2.0.3",
     "vue-router": "^4.0.0-0",
     "vue-typed-js": "^0.1.2",
     "vue-typewriter": "^2.2.1"

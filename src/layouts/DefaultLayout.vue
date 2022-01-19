@@ -6,6 +6,7 @@
     <About />
     <Services />
     <Portfolio />
+    <Clients />
   </div>
 </template>
 <script>
@@ -15,10 +16,11 @@ import About from "@/components/About.vue";
 import SideBar from "@/components/SideBar.vue";
 import Services from "@/components/Services.vue";
 import Portfolio from "@/components/Portfolio.vue"
+import Clients from "@/components/Clients.vue"
 
 export default {
   name: "DefaultLayout",
-  components: { Navbar, Home, SideBar, About, Services, Portfolio },
+  components: { Navbar, Home, SideBar, About, Services, Portfolio, Clients },
   data() {
     return {
       isActive: false,
@@ -43,6 +45,7 @@ body {
   color: #343434;
   font-weight: 400;
   font-size: 14px;
+  outline: none;
 }
 </style>
 

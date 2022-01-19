@@ -161,7 +161,7 @@ export default {
 }
 @media (min-width: 0) and (max-width: 767px) {
   .services {
-    margin-top: 200px;
+    margin-top: 300px;
   }
 }
 </style>

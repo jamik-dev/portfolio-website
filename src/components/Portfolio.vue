@@ -101,7 +101,7 @@ img{
 }
 .portfolio {
   overflow: hidden;
-  height: 160vh;
+  height: auto;
 }
 .section-head h3{
   margin-top: 100px;
