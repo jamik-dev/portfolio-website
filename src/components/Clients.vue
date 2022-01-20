@@ -2,33 +2,35 @@
   <section class="clients">
     <div class="container">
       <div class="section-head"><h3>Testimonials</h3></div>
-      <swiper :slides-per-view="3" :space-between="50">
-        <swiper-slide>
-          <div class="owl-carousel" v-for="item in items" :key="item.id">
-            <div class="row">
-              <div class="col-12">
-                <div class="citem">
-                  <div class="author-img"><img :src="item.url" alt="" /></div>
-                  <p>{{ item.speech }}</p>
-                  <h6>{{ item.customer }}</h6>
-                  <span>{{ item.customerItem }}</span>
-                </div>
+      <Carousel :autoplay="4000" :transition="1000" :wrap-around="true">
+        <Slide v-for="item in items" :key="item.id">
+          <div class="row">
+            <div class="col-12">
+              <div class="citem">
+                <div class="author-img"><img :src="item.url" alt="" /></div>
+                <p>{{ item.speech }}</p>
+                <h6>{{ item.customer }}</h6>
+                <span>{{ item.customerItem }}</span>
               </div>
             </div>
           </div>
-        </swiper-slide>
-      </swiper>
+        </Slide>
+        <template #addons>
+          <Pagination />
+        </template>
+      </Carousel>
     </div>
   </section>
 </template>
 <script>
-// import { Swiper, SwiperSlide } from "swiper/vue";
-// import "swiper/css";
+import "vue3-carousel/dist/carousel.css";
+import { Carousel, Slide, Pagination } from "vue3-carousel";
 import { ref } from "vue";
 export default {
   components: {
-    // Swiper,
-    // SwiperSlide,
+    Carousel,
+    Slide,
+    Pagination,
   },
   setup() {
     const items = ref([
@@ -61,13 +63,14 @@ export default {
 <style>
 .clients {
   width: 100%;
-  height: auto;
+  height: 100vh;
   background: #f7f7f7;
   margin-top: 100px;
 }
 .clients .container {
   text-align: center;
 }
+
 .clients .citem .author-img {
   width: 90px;
   height: 90px;
@@ -91,4 +94,18 @@ export default {
   color: #888;
   margin-bottom: 30px;
 }
+.carousel__pagination{
+  margin-left: -28px;
+  margin-top: 30px;
+}
+.carousel__pagination-button{
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background-color: #D6D6D6;
+}
+.carousel__pagination-button--active {
+  background-color: #869791;
+}
+
 </style>

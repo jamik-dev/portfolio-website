@@ -104,9 +104,10 @@ export default {
   text-align: center;
 }
 .section-head h3 {
-  font-weight: 900;
+  font-weight: 1000;
   font-size: 40px;
   position: relative;
+  letter-spacing: 1px;
   display: inline-block;
   z-index: 4;
 }

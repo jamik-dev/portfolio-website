@@ -19,7 +19,8 @@
     "vue-owl-carousel": "^2.0.3",
     "vue-router": "^4.0.0-0",
     "vue-typed-js": "^0.1.2",
-    "vue-typewriter": "^2.2.1"
+    "vue-typewriter": "^2.2.1",
+    "vue3-carousel": "^0.1.35"
   },
   "devDependencies": {
     "@fortawesome/fontawesome-free": "^5.15.4",

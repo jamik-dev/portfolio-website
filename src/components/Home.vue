@@ -1,7 +1,6 @@
 <template>
   <!-- ====== Header ======  -->
   <section id="home" class="header">
-    <!-- <img src="/img/bg.jpg" class="img" alt="" /> -->
     <div class="svg">
       <svg x="0px" y="0px" viewBox="0 186.5 1920 113.5">
         <polygon
