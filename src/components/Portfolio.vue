@@ -105,7 +105,7 @@ img{
 }
 .section-head h3{
   margin-top: 100px;
-  font-weight: 900;
+  font-weight: 1000;
   font-size: 40px;
   position: relative;
   display: inline-block;

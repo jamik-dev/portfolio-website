@@ -25,13 +25,13 @@
               <a href="#0">
                 <span><i class="fab fa-facebook-f"></i></span>
               </a>
-              <a href="#0">
+              <a href="https://t.me/web_developer_OIK">
                 <span><i class="fab fa-telegram-plane"></i></span>
               </a>
-              <a href="#0">
+              <a href="https://github.com/jamik-dev">
                 <span><i class="fab fa-github"></i></span>
               </a>
-              <a href="#0">
+              <a href="https://instagram.com/jamshid_khamidovich">
                 <span><i class="fab fa-instagram"></i></span>
               </a>
               <a href="#0">
@@ -146,7 +146,7 @@ export default {
   z-index: 5;
 }
 .v-middle .caption h5 {
-  font-size: 50px;
+  font-size: 48px;
   font-weight: 1000;
   letter-spacing: 4px;
   margin-bottom: 10px;
@@ -210,8 +210,8 @@ h5 {
 span.cursor {
   display: inline-block;
   margin-left: 3px;
-  width: 4px;
-  height: 90px;
+  width: 3px;
+  height: 80px;
   background: #fff;
   animation: cursorBlink 1s infinite;
 }
@@ -227,6 +227,17 @@ span.cursor.typing {
   }
   99% {
     background: transparent;
+  }
+}
+@media (min-width: 0px) and (max-width: 767px){
+  .v-middle .social-icon{
+    margin-top: 100px;
+  }
+  .clip .is-visible{
+    font-size: 4rem;
+  }
+  .clip{
+    font-size: 4rem;
   }
 }
 </style>

@@ -8,6 +8,9 @@
     <Portfolio />
     <Clients />
     <Numbers />
+    <Blog />
+    <Contact />
+    <Footer />
   </div>
 </template>
 <script>
@@ -19,10 +22,15 @@ import Services from "@/components/Services.vue";
 import Portfolio from "@/components/Portfolio.vue"
 import Clients from "@/components/Clients.vue"
 import Numbers from "@/components/Numbers.vue"
+import Blog from "@/components/Blog.vue"
+import Contact from '@/components/Contact.vue';
+import Footer from '@/components/Footer.vue'
+
+
 
 export default {
   name: "DefaultLayout",
-  components: { Navbar, Home, SideBar, About, Services, Portfolio, Clients, Numbers },
+  components: { Navbar, Home, SideBar, About, Services, Portfolio, Clients, Numbers, Blog, Contact, Footer},
   data() {
     return {
       isActive: false,
