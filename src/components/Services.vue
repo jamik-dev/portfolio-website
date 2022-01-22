@@ -115,7 +115,7 @@ export default {
   content: "";
   width: 100%;
   height: 30px;
-  background-image: url(~@/assets/img/dots.png);
+  background-image: url(/img/dots.png);
   background-repeat: repeat;
   position: absolute;
   bottom: -10px;

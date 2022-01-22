@@ -30,14 +30,14 @@
               </div>
               <div class="item">
                 <div class="skill-progress">
-                  <h6>Web Design</h6>
-                  <span data-value="90%" style="width: 90%"></span>
+                  <h6>Web Construct</h6>
+                  <span data-value="80%" style="width: 80%"></span>
                 </div>
               </div>
               <div class="item">
                 <div class="skill-progress">
-                  <h6>Web Design</h6>
-                  <span data-value="90%" style="width: 90%"></span>
+                  <h6>Web Marketing</h6>
+                  <span data-value="70%" style="width: 70%"></span>
                 </div>
               </div>
             </div>
