@@ -3,7 +3,7 @@
     <div class="container">
       <div class="row">
         <div class="col-12 colum">
-          <p>Copy Right 2018 © By Jamshid All Rights Reserved</p>
+          <p>Copy Right 2022 © By Jamshid All Rights Reserved</p>
         </div>
       </div>
     </div>
